@@ -24,7 +24,7 @@ export default function Intro() {
                     <li><strong className="text-amber-400">Adaptabilidad:</strong> Me adapto rápidamente a nuevas tecnologías y metodologías de trabajo.</li>
                     <li><strong className="text-amber-400">Gestión del tiempo:</strong> Organizo y priorizo tareas para cumplir con los plazos establecidos.</li>
                 </ul>
-                <img className="w-1/3 rounded-3xl border-4 border-amber-500" src="/public/img/fondo.jpg" alt="" />
+                <img className="w-1/3 rounded-3xl border-4 border-amber-500" src="/img/fondo.jpg" alt="" />
                 </div>
                 
             </section>

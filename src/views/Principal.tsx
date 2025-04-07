@@ -26,7 +26,7 @@ function App() {
       <div
         className="absolute top-0 left-0 w-full h-full bg-cover bg-center -z-10"
         style={{
-          backgroundImage: `url('/public/img/fondo.jpg')`,
+          backgroundImage: `url('/img/fondo.jpg')`,
           backgroundPosition: `center ${scrollOffset * 0.5}px`, // El efecto parallax dinámico
         }}
       ></div>
