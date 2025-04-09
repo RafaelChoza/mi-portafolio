@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Fade } from "react-awesome-reveal";
 import { useLanguage } from "../components/LanguageProvider";
-import { ArrowUpCircleIcon } from "@heroicons/react/24/outline";
 
 function App() {
   const [scrollOffset, setScrollOffset] = useState(0);
