@@ -53,10 +53,12 @@ export default function Projects() {
                   <li
                     key={index}
                     className="bg-gray-800 w-7/8 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-transform duration-500 ease-out transform hover:scale-105 animate-scale-in"
+                    onMouseEnter={() => handleMouseEnter(index)}
+                    onMouseLeave={handleMouseLeave}
                   >
                     <h3 className="text-xl md:text-2xl font-bold">{project.name}</h3>
                     <p className="text-gray-400 mt-2">{project.description}</p>
-                    <img className="border-4 border-amber-400" src={project.image} alt="" />
+                    <img className={`border-4 ${hoveredIndex === index ? 'animated-border' : 'border-amber-400'}`} src={project.image} alt="" />
                     <a
                       href={project.link}
                       target="_blank"
