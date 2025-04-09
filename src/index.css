@@ -1,1 +1,50 @@
 @import "tailwindcss";
+
+@keyframes underline-animation {
+    0% {
+      background-position: 0% 100%;
+    }
+    100% {
+      background-position: 100% 100%;
+    }
+  }
+  
+  .underline-effect {
+    @apply relative inline-block;
+  }
+  
+  .underline-effect::after {
+    content: '';
+    @apply absolute w-full h-0.5 bottom-0 left-0 bg-gradient-to-r from-orange-400 via-red-400 to-red-700 bg-no-repeat bg-[length:200%_100%] scale-x-0 transition-transform duration-300 ease-in-out;
+    visibility: hidden;
+    animation: underline-animation 1s linear infinite;
+  }
+  
+  .underline-effect:hover::after {
+    @apply scale-x-100;
+    visibility: visible;
+  }
+
+  @keyframes borderAnimation {
+    0% {
+      border-color: #f6ff00; /* Amber-400 */
+    }
+    25% {
+      border-color: #3b82f6; /* Blue-500 */
+    }
+    50% {
+      border-color: #f50b0b; /* Amber-400 */
+    }
+    75% {
+      border-color: #00ff26; /* Amber-400 */
+    }
+    100% {
+      border-color: #ea00ff; /* Amber-400 */
+    }
+  }
+  
+  .animated-border {
+    border-width: 4px;
+    border-style: solid;
+    animation: borderAnimation 3s infinite;
+  }
