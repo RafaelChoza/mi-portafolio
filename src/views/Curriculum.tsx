@@ -18,7 +18,7 @@ export default function Curriculum() {
                 <embed
                     src="/CV.pdf"
                     type="application/pdf"
-                    className="w-full h-screen"
+                    className="w-full h-screen bg-white"
                     title="PDF Viewer"
                 />
                 </Zoom>
