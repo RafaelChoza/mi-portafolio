@@ -1,9 +1,12 @@
-import React, { useRef, FormEvent } from 'react';
+import React, { useRef, FormEvent, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Background from '../components/Background';
 import { useLanguage } from '../components/LanguageProvider';
 
 export const ContactUs: React.FC = () => {
+
+  const [showModal, setShowModal] = useState(false)
+  const [slideIn, setSlideIn] = useState(false);
 
   const { language } = useLanguage();
 
@@ -21,6 +24,17 @@ export const ContactUs: React.FC = () => {
       .then(
         () => {
           console.log('SUCCESS!');
+          form.current?.reset()
+
+          setShowModal(true);
+          setSlideIn(true); // Hace que el mensaje se deslice dentro
+
+          setTimeout(() => {
+            setSlideIn(false); // Hace que el mensaje se deslice fuera
+            setTimeout(() => {
+              setShowModal(false); // Oculta completamente el mensaje
+            }, 500); // Espera a que termine la animación de salida
+          }, 3000); // Mantiene el mensaje visible por 3 segundos
         },
         (error) => {
           console.log('FAILED...', error.text);
@@ -62,6 +76,14 @@ export const ContactUs: React.FC = () => {
           />
         </a>
       </section>
+      <div
+        className={`fixed -right-2 transition-transform duration-500 ${slideIn ? 'translate-x-0' : 'translate-x-full'} ${showModal ? 'opacity-100' : 'opacity-0'}`}
+      >
+        <h2 className='m-10 p-10 bg-gray-100 border-5 border-red-600 rounded-4xl text-center w-fit text-gray-800 font-bold'>
+          {language === "es" ? "Datos enviados con éxito" : "Data sent successfully"}
+        </h2>
+      </div>
+
     </div>
 
   );
