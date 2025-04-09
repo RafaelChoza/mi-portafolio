@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Fade } from "react-awesome-reveal";
-import { useLanguage } from "../components/LanguageProvider";
+import { useLanguage } from "../src/components/LanguageProvider";
 
 function App() {
   const [scrollOffset, setScrollOffset] = useState(0);

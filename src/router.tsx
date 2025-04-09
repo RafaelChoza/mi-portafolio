@@ -1,5 +1,5 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
-import Principal from "./views/Principal";
+import Principal from "../public/Principal";
 import Contact from "./views/Contact";
 import Curriculum from "./views/Curriculum";
 import Projects from "./views/Projects";

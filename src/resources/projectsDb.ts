@@ -3,13 +3,13 @@ const projects = [
         name: 'Pagina de Peliculas basada en una API',
         description: 'Esta pagina usa una REST API como base de datos para obtener la informacion de las peliculas. Tiene opcion de filtrar las peliculas. Este proyecto usa HTML, CSS, y Javascript',
         link: 'https://rafaelchoza.github.io/temaze-API-project/',
-        image: '/src/img/peliculones.jpg'
+        image: '/public/peliculones.jpg'
     },
     {
         name: 'Consultor de Criptomonedas',
         description: 'Esta pagina usa una REST API para obtener la informacion de diferentes criptomonedas. Este proyecto usa ReactJS, Tailwind, TypeScript ans Zustand.',
         link: 'https://deft-melomakarona-e59a7b.netlify.app/',
-        image: '/src/img/cripto.jpg'
+        image: '/public/cripto.jpg'
     },
     {
         name: 'Consultor del Clima',
