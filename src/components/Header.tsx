@@ -42,12 +42,17 @@ export default function Header() {
               {language === 'es' ? 'Contacto' : 'Contact'}
             </Link>
           </nav>
-          <select value={language} onChange={handleLanguageChange} className="bg-gray-900 text-green-400 hover:text-white transition-all duration-300 text-xl md:text-2xl">
-            <option value="es">Español</option>
-            <option value="en">English</option>
-          </select>
+          <div className="flex flex-row">
+          <p className="text-white mx-3">{language === 'es' ? 'Seleccione Idioma' : 'Select Language'}</p>
+            <select value={language} onChange={handleLanguageChange} className="bg-gray-900 text-green-400 hover:text-white transition-all duration-300 text-xl md:text-2xl">
+              <option value="es">Español</option>
+              <option value="en">English</option>
+            </select>
+          </div>
+          
+
         </header>
-        
+
       </Fade>
     </div>
   );
