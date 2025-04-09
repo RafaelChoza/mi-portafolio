@@ -16,7 +16,7 @@ export default function Curriculum() {
                 {/* Mostrar el PDF */}
                 <Zoom>
                 <embed
-                    src="/src/resources/CV.pdf"
+                    src="/CV.pdf"
                     type="application/pdf"
                     className="w-full h-screen"
                     title="PDF Viewer"
