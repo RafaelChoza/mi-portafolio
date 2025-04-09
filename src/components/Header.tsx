@@ -43,7 +43,11 @@ export default function Header() {
             </Link>
           </nav>
           <div className="flex flex-row">
-          <p className="text-white mx-3">{language === 'es' ? 'Seleccione Idioma' : 'Select Language'}</p>
+          <p 
+            className="mx-3 font-bold bg-gradient-to-r from-yellow-200 to-red-600 animate-pulse bg-clip-text text-transparent mb-4 md:mb-0"
+          >
+            {language === 'es' ? 'Seleccione Idioma' : 'Select Language'}
+          </p>
             <select value={language} onChange={handleLanguageChange} className="bg-gray-900 text-green-400 hover:text-white transition-all duration-300 text-xl md:text-2xl">
               <option value="es">Español</option>
               <option value="en">English</option>
