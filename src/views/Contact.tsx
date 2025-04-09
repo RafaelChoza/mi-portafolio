@@ -47,13 +47,13 @@ export const ContactUs: React.FC = () => {
       <Background />
       <form ref={form} onSubmit={sendEmail} className='flex flex-col items-center'>
         <label htmlFor="name" className='text-white p-5 text-3xl'>{language === "es" ? "Nombre" : "Name"}</label>
-        <input className='bg-white w-1/2 p-5 text-black rounded-3xl' placeholder={language === "es" ? "Tu nombre aquí" : "Your name here"} type="text" name="user_name" id="name" required />
+        <input className='bg-white w-3/5 p-5 text-black rounded-3xl' placeholder={language === "es" ? "Tu nombre aquí" : "Your name here"} type="text" name="user_name" id="name" required />
 
         <label htmlFor="email" className='text-white p-5 text-3xl'>{language === "es" ? "Correo" : "E-mail"}</label>
-        <input className='bg-white w-1/2 p-5 text-black rounded-3xl' placeholder={language === "es" ? "Tu correo aquí" : "Your e-mail here"} type="email" name="user_email" id="email" required />
+        <input className='bg-white w-3/5 p-5 text-black rounded-3xl' placeholder={language === "es" ? "Tu correo aquí" : "Your e-mail here"} type="email" name="user_email" id="email" required />
 
         <label htmlFor="message" className='text-white p-5 text-3xl'>{language === "es" ? "Comentarios" : "Comments"}</label>
-        <textarea className='bg-white w-1/2 p-5 text-black rounded-3xl' placeholder={language === "es" ? "Tus comentarios aquí" : "Your comments here"} name="message" id="message" required />
+        <textarea className='bg-white w-3/5 p-5 text-black rounded-3xl' placeholder={language === "es" ? "Tus comentarios aquí" : "Your comments here"} name="message" id="message" required />
 
         <input className='bg-gradient-to-r from-blue-500 to-purple-600 hover:from-purple-600 text-white p-5 rounded-md m-5' type="submit" value={language === "es" ? "Enviar" : "Send"} />
       </form>
