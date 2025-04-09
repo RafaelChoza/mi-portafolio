@@ -34,7 +34,7 @@ function App() {
       <Fade>
         <div>
           <h2 className="text-2xl md:text-3xl font-semibold animate-slide-left py-5">{language === 'es' ? 'Acerca de mi' : 'About me'}</h2>
-          <p className="text-3xl p-10 text-justify sm:text-6xl">{language === 'es' ? 'Mi nombre es' : 'My name is'}
+          <p className="text-xl p-10 text-justify sm:text-6xl">{language === 'es' ? 'Mi nombre es' : 'My name is'}
             <strong className="text-amber-400"> Rafael Choza</strong>{language === 'es' ?
               ' radico en la ciudad de Mérida Yucatán México. He trabajado en diversos proyectos que abarcan desde el diseño de interfaces de usuario hasta la implementación de servicios backend. Me apasiona crear soluciones eficientes y de alta calidad que mejoren la experiencia del usuario y optimicen los procesos empresariales. Siempre estoy en busca de nuevos desafíos y oportunidades para aprender y crecer profesionalmente.'
               :
