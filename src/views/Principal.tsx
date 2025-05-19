@@ -79,6 +79,7 @@ function App() {
               <img src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-ar21.svg" />
               <img src="https://www.vectorlogo.zone/logos/netlify/netlify-ar21.svg" />
               <img src="https://www.vectorlogo.zone/logos/vitejsdev/vitejsdev-ar21.svg" />
+              <img src="https://www.vectorlogo.zone/logos/expressjs/expressjs-ar21.svg"/>
             </div>
           </section>
         </div>
