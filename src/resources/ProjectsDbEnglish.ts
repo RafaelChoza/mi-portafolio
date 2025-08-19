@@ -1,6 +1,12 @@
 const projects = [
   {
-    name: 'Sistema Integral FullStack para la Gestión de ordenes de mantenimiento',
+    name: 'Integrated Full-Stack System for Warehouse Management',
+    description: 'I developed a comprehensive business solution using ReactJS, TailwindCSS, and TypeScript on the frontend, incorporating dependencies such as Toastify and jwt_code. On the backend, I implemented Java SpringBoot with Spring Security, JWT-based authentication, and MySQL as the database.The system enables the management of maintenance orders, with functionalities tailored to each users role. Additionally, it includes options for user creation, password recovery, and password changes through various backend endpoints. All of this is designed to provide a structured database for efficient information retrieval',
+    link: 'https://github.com/RafaelChoza/mantenimiento',
+    image: '/mantenimiento.jpg'
+  },
+  {
+    name: 'Integrated Full-Stack System for Maintenance Order Management',
     description: 'I developed a comprehensive business solution using ReactJS, TailwindCSS, and TypeScript on the frontend, incorporating dependencies such as Toastify and jwt_code. On the backend, I implemented Java SpringBoot with Spring Security, JWT-based authentication, and MySQL as the database.The system enables the management of maintenance orders, with functionalities tailored to each users role. Additionally, it includes options for user creation, password recovery, and password changes through various backend endpoints. All of this is designed to provide a structured database for efficient information retrieval',
     link: 'https://github.com/RafaelChoza/mantenimiento',
     image: '/mantenimiento.jpg'
