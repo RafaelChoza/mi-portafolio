@@ -11,7 +11,7 @@ export default function Curriculum() {
         <div className="relative text-white min-h-screen flex flex-col">
             <Background />
             <Fade>
-            <h2 className="text-2xl md:text-3xl font-semibold animate-slide-left py-5">{language === "es" ? "Curriculum" : 'Resume'}</h2>
+            <h2 className="text-2xl md:text-3xl font-semibold animate-slide-left py-5">{language === "es" ? "Currículum" : 'Resume'}</h2>
             <div className="pdf-viewer-container p-10">
                 {/* Mostrar el PDF */}
                 <Zoom>
