@@ -1,7 +1,7 @@
 const projects = [
   {
     name: 'Sistema Integral FullStack para la administracion de un almacén',
-    description: 'I developed a comprehensive enterprise solution with ReactJS, TailwindCSS, and TypeScript on the frontend, incorporating dependencies such as Toastify and jwt_code. On the backend, I implemented Java Spring Boot with Spring Security, JWT-based authentication, and MySQL as the database. The system enables spare parts warehouse management, with features adapted to each user’s role. It also includes user creation, password recovery, and password change through various backend endpoints. All of this was designed to provide a well-structured database that facilitates information retrieval.',
+    description:'Desarrollé una solución empresarial integral con ReactJS, TailwindCSS y TypeScript en el frontend, incorporando dependencias como Toastify y jwt_code. En el backend implementé Java Spring Boot con Spring Security, autenticación basada en JWT y MySQL como base de datos. El sistema permite la gestión de almacenes de repuestos, con funcionalidades adaptadas según el rol de cada usuario. También incluye la creación de usuarios, recuperación de contraseña y cambio de contraseña a través de diversos endpoints del backend. Todo esto fue diseñado para proporcionar una base de datos bien estructurada, que facilite la recuperación de información de manera eficiente.',
     link: 'https://github.com/RafaelChoza/warehouseAdmin',
     image: '/warehouseAdmin.jpg'
   },

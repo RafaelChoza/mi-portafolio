@@ -16,7 +16,28 @@ export default function Curriculum() {
                 {/* Mostrar el PDF */}
                 <Zoom>
                 <embed
-                    src="/CV-Full-Stack.pdf"
+                    src="/CV_Rafael_EBAC_ESP.pdf"
+                    type="application/pdf"
+                    className="w-full h-screen bg-white"
+                    title="PDF Viewer"
+                />
+                </Zoom>
+                
+
+                {/* Botón para descargar */}
+                <a
+                    href="/src/resources/CV.pdf"
+                    download="CV.pdf"
+                    className="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+                >
+                    {language === 'es' ? 'Descagar PDF':'Download PDF'}
+                </a>
+            </div>
+             <div className="pdf-viewer-container p-10">
+                {/* Mostrar el PDF */}
+                <Zoom>
+                <embed
+                    src="/CV_Rafael_EBAC ENG.pdf"
                     type="application/pdf"
                     className="w-full h-screen bg-white"
                     title="PDF Viewer"
